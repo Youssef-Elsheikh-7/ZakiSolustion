@@ -1,0 +1,36 @@
+.main-title {
+  color: #7B1FA2;
+  font-size: 5rem;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  margin: 0px auto 50px;
+}
+
+.main-title::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #ff6f00;
+  bottom: 0;
+  left: 0;
+}
+
+.main-title::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: #7B1FA2;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+@media (max-width:991px) {
+  .main-title {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,79 @@
+.footer {
+  background-color: #af9fb6;
+  /* background-color: rgb(10, 37, 10); */
+  padding: 50px 20px 10px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .container .logo{
+  width: 160px;
+  order: 2;
+}
+
+.footer .container .logo img {
+  width: 100%;
+}
+
+
+.footer .container .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  order: 1;
+
+}
+
+.footer .container .icons li {
+  padding: 5px 10px ;
+}
+.footer .container .contact p{
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer .container .contact .nums {
+  display: flex;
+  flex-direction: column;
+}
+.footer .container .contact .nums>span {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer .container .contact .nums img {
+  margin-left: 10px;
+}
+
+.footer .container .contact .num {
+  margin-bottom: 8px;
+}
+
+
+@media (max-width:991px) {
+.footer .container {
+  flex-direction: column;
+}
+.footer .container .logo{
+  order: -1;
+  margin-bottom: 20px;
+}
+.footer .container .icons{
+  order: 1;
+  margin-bottom: 20px;
+
+}
+.footer .container .contact{
+  order: 2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer .container .contact .nums>span {
+  justify-content: center;
+}
+}

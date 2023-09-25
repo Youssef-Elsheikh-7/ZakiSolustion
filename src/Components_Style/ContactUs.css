@@ -1,0 +1,99 @@
+#contact-from {
+  height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .container{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .container .contact-info{
+  order: -1;
+  text-align: right;
+}
+.contact .container .form-area form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact .container .form-area .input,
+.contact .container .form-area textarea
+  {
+  border: none !important;
+  padding: 10px 10px !important;
+  background-color: #EDE7F0 !important;
+  margin: 5px;
+  border-radius: 8px;
+  caret-color: #ff6f00;
+}
+.contact .container .form-area .input{
+  flex: 45%;
+}
+.contact .container .form-area textarea{
+  flex: 100%;
+}
+
+.contact .container .form-area .input:focus,
+.contact .container .form-area textarea:focus{
+  outline: none;
+}
+
+
+.contact .container .form-area button{
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease,transform 0.15s ease;
+  will-change: box-shadow,transform;
+  background: #7B1FA2;
+  /* box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3d0455; */
+  height: 48px;
+  padding: 0 32px;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #fff;
+  transition: box-shadow 0.15s ease,transform 0.15s ease;
+  margin: 10px auto ;
+
+
+}
+.contact .container .form-area button:hover {
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #9b78ac;
+  transform: translateY(-2px);
+}
+.contact .container .form-area button:active{
+  box-shadow: inset 0px 3px 7px #d6d6e7;
+  transform: translateY(2px);
+}
+
+@media (width <= 767px) {
+  .contact .container .form-area .input{
+    flex: 100%;
+  }
+}
+@media (max-width:991px) {
+.contact .container{
+  flex-direction: column;
+}
+.contact .container .contact-info{
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+}
+
+@media (min-width:992px) {
+.contact .container .form-area{
+  max-width: 55%;
+}
+.contact .container .contact-info{
+  text-align: right;
+}
+
+}
+

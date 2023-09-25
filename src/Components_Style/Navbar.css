@@ -1,0 +1,97 @@
+:root {
+  --mov:#7B1FA2;
+  --org:#FF6F00;
+}
+nav.sticky-nav {
+  box-shadow: 0px 2px 9px 0px #b5b5b5;
+  position: fixed;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+
+}
+nav.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  transition: .3s all;
+}
+
+.Navbar-comp .logo {
+  width: 120px;
+}
+.Navbar-comp .logo .logo-img {
+  max-width: 100%;
+}
+
+.Navbar-comp .bef-link {
+  position: relative;
+  opacity: 1 !important;
+  font-size: 18px;
+  font-weight: 600;
+}
+.Navbar-comp .active::before {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 2px;
+  background-color: var(--org);
+  bottom: 8px;
+  right:8px;
+  transition: .3s;
+}
+
+.Navbar-comp .active:hover::before{
+  width: 80%;
+}
+.Navbar-comp .logo .solu {
+  font-size: 10px;
+}
+
+.Navbar-comp .contact-us {
+  background-color: var(--mov) !important;
+  border: var(--mov);
+}
+
+@media (max-width:991px) {
+  .Navbar-comp .logo{
+    order: -4 !important;
+    margin: 0 !important;
+  }
+  .Navbar-comp .burger-icon{
+    order: -2 !important;
+  }
+  .Navbar-comp .contact-us{
+    order: -5 !important;
+  }
+}
+
+@media (min-width:991px) {
+  .Navbar-comp .logo{
+    order: -1 !important;
+  }
+  .Navbar-comp .burger-icon{
+    order: 0 !important;
+  }
+  .Navbar-comp .contact-us{
+    order: 1 !important;
+  }
+}
+
+.Navbar-comp .burger-icon:focus {
+  box-shadow: none !important;
+  border: 1px solid var(--mov) !important;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}

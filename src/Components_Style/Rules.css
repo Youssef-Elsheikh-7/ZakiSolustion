@@ -1,0 +1,26 @@
+.rules {
+  padding: 50px 0;
+}
+.rules .container{
+
+}
+.rules .container h3{
+  padding: 20px 0;
+}
+.rules .container p{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.rules .container ul{}
+.rules .container ul li{
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.rules .container ul li h4{
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.rules .container ul li h5{
+  font-weight: 400;
+  font-size: 19px;
+}

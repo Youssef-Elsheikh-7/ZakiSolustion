@@ -1,0 +1,26 @@
+.features{
+  text-align: center;
+  padding: 50px 0;
+}
+.features .container{
+  gap: 40px;
+  margin: 10px auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.features .container .cir{
+text-align: center;
+width: 150px;
+height: 250px;
+}
+.features .container .cir img{
+  width: 100%;
+}
+.features .container .cir .text{
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 5px;
+}

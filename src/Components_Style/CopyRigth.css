@@ -1,0 +1,29 @@
+.copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 0;
+  border-top: 2px solid #ff6f00;
+  background-color: #7b1fa2;
+  color: #fff;
+}
+.copy p {
+  font-size: 18px;
+}
+.copy .sec{
+  margin-right: 20px;
+
+}
+
+@media (max-width:991px) {
+  .copy {
+    flex-direction: column;
+    text-align: center;
+    padding: 5px ;
+  }
+}
+
+.copy .sec a {
+  color: #fff;
+  /* text-decoration: none; */
+}
